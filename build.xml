@@ -1,0 +1,12 @@
+<project>
+    <target name="clean">
+        <delete dir="build"/>
+        <mkdir dir="build/classes"/>
+    </target>
+    <target name="compile" depends="clean">
+        <javac srcDir="src" destDir="build/classes"/>
+    </target>
+    <target name="run">
+        <java classname = "com.lfa.calculation.Calculation" classpath="build/classes"/>
+    </target>
+</project>
